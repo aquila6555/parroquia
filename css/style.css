@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
+body {
+font-family: 'IM Fell Great Primer SC', serif;
+
+/*
+    background-image: url(2.jpg);
+    background-size: cover;
+*/
+background-color: #fff;
+}
+
+main h1 {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+}
+.paralax{
+    width: 100%;
+    background-color: aqua;
+    height: 200px;
+    background-image: url(../img/5.PNG);
+    background-position: center;
+background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-header {
+  min-height: 25px;
+  padding: 20px;
+  background: orange;
+}
+.page-header .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.logo  {
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 20px;
+  z-index: 2;
+}
+
+.nav--page-header {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 100%;
+  transition: height, margin .3s ease;
+  z-index: 1;
+  height: 0px;
+  overflow: hidden;
+}
+.nav--open {
+  height: auto;
+  margin-top: 30px;
+  border-top: 3px solid white;
+}
+.nav__link {
+  margin: 20px 0 0;
+  color: #585858;
+  text-decoration: none;
+  font-size: 20px;
+
+  transition: color .5s ease;
+}
+.nav__link:hover {
+  color: #F2BB16;
+}
+
+/******
+Helpers 
+******/
+/* Navigation button icon */
+.nav-btn {
+  width: 40px;
+  height: 25px;
+  position: relative;
+  margin-left: auto;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 2;
+}
+
+.nav-btn span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.nav-btn span:nth-child(1) {
+  top: 0px;
+}
+
+.nav-btn span:nth-child(2),
+.nav-btn span:nth-child(3) {
+  top: 10px;
+}
+
+.nav-btn span:nth-child(4) {
+  top: 20px;
+}
+
+.nav-btn.open span:nth-child(1) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+
+.nav-btn.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.nav-btn.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.nav-btn.open span:nth-child(4) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: aquamarine;
+}
+/* End of Navigation button icon */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .nav--page-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+      align-items: center;
+    flex: 1;
+    height: 100%;
+    margin: auto;
+    transition: height, margin .3s ease;
+    z-index: 1;
+  }
+  .nav--open {
+    height: auto;
+    margin: auto;
+    border: none;
+  }
+  .nav__link {
+    margin: 3px 10px;
+  }
+
+  .page-header {
+    background: rgba(242, 242, 242, 0.81);
+    padding: 20px;
+
+       border-bottom: 5px solid #F2BB16;
+  }
+      .imglogo {
+width: 40%;
+  }
+  .page-header .container {
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+      width: 100%
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    width:100%;
+  }
+}
