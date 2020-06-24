@@ -1,3 +1,11 @@
-body{
+  @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
+  body {
+  font-family: 'IM Fell Great Primer SC', serif;
   background-color: rgb(255, 153, 0);
+}
+.fixed-top{
+  border-bottom: 5px solid #F2BB16;
+}
+.nav-link{
+  color: black;
 }

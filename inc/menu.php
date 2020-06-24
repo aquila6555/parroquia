@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
       <a class="navbar-brand" href="#">
         <!-- <img src="img/log.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> -->
         Parroquia Maria Reina
@@ -18,7 +18,8 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="pages/galeria.php">Galeria</a>
-            <li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">Sacramentos</a>
           </li>
           <li class="nav-item">
